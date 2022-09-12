@@ -14,5 +14,12 @@ namespace FindMaximumNumberTest
             int num = max.FindMaxIntNumber(1,3,2);
             Assert.AreEqual(num, 7);
         }
+        [TestMethod]
+        public void GivenMaxFirstNumber_WhenAnalized_ShouldReturnMaxNumber()
+        {
+            FindMaximum max = new FindMaximum();
+            float num = max.FindMaxFloatNumber(2.2f,3.4f, 5.2f);
+            Assert.AreEqual(num,5.2f);
+        }
     }
 }

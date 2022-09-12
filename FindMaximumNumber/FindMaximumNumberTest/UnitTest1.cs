@@ -21,5 +21,13 @@ namespace FindMaximumNumberTest
             float num = max.FindMaxFloatNumber(2.2f,3.4f, 5.2f);
             Assert.AreEqual(num,5.2f);
         }
+        [TestMethod]
+        public void GivenMaxFirstNumber_WhenAnalized_ShouldReturnMaxNumber()
+        {
+            FindMaximum max = new FindMaximum();
+            string num = max.FindMaxStringNumber("Apple","Banana","Strawberry");
+            Assert.AreEqual(num, "Strawberry");
+        }
     }
 }
+  
